@@ -1,2 +1,2 @@
-# ICFoodSite.github.io
+# ICFoodSite
 A food website.
