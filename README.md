@@ -1,2 +1,2 @@
-# ICFoodSite
+#FoodSite
 A food website.
