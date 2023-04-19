@@ -1,3 +1,20 @@
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 .banner {
 	padding:2px;
 	margin:0px;
@@ -18,41 +35,113 @@
 	border-bottom:5px solid white;
 	font-size:15px;
 }
+
 .tabs:hover {
 	border-bottom:5px solid black;
 }
 
-.third {
-	margin: 5px;
+/*Bread Page CSS*/
+.bread_page {
+	margin: 10px;
+}
+
+.bread_image {
+	float: left;
+	width:50%;
+	max-width: 600px;
+	height:auto;
 	color:black;
-	background-color:white;
-	padding:10px;
-	width: 20%;
-	float:left;
-	max-width:300px;
-	font-size:12px;
+	font-size:20px;
+	padding-right: 20px;
 }
 
-* {
-  box-sizing: border-box;
+.bread_text {
+	padding-top: 60px;
+	color:black;
+	font-size:20px;
+	margin: 10px;
 }
 
-
-section::after {
-  content: "";
-  display: table;
-  clear: both;
+/*Facts Page CSS*/
+.facts_page {
+	margin: 10px;
 }
 
+.facts_image {
+	float: left;
+	width:400px;
+	height:auto;
+	padding-right: 60px;
+}
+
+.facts_text {
+	color:black;
+	font-size:20px;
+	margin: 10px;
+}
+
+.facts_column {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+
+img{width:100%;height:auto;}
 a{color:black; background-color: transparent; text-decoration: none;}
-img{width:100%;max-width:300px;height:auto;}
-footer{font-size:10px;color:white;background-color:#212121;padding:10px;}
-body{font-family: Arial, Helvetica, sans-serif;background-color: white;color: black;margin: 0px;padding:0px;}
+footer{margin-top: auto;font-size:10px;color:white;background-color:#212121;padding:10px;}
+body{min-height: 100vh; display: flex; flex-direction: column;font-family: Arial, Helvetica, sans-serif;background-color: white;color: black;margin: 0px;padding:0px;}
+
+@media screen and (max-width: 900px) {
+  .facts_text {
+	  font-size:18px;
+  }
+}
 
 @media screen and (max-width: 800px) {
-  .tabs, .third, img {
-	  width: 100%;
-	  max-width:1000px;
+  .tabs, .bread_image, .column, .bread_text {
+	  width:100%;
+	  font-size:15px;
+	  float: left;
+  }
+  
+  .bread_image {
+	  padding-right: none;
+	  max-width: none;
+	  margin: none;
+  }
+  
+  .bread_text {
+	  padding-top: none;
+  }
+  
+  .facts_image {
+		width:320px;
+		padding-right: 30px;
+  }
+  
+  .facts_text {
+	  font-size:16px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .facts_text {
 	  font-size:15px;
   }
+}
+
+@media screen and (max-width: 630px) {
+	.facts_image {
+		width:200px;
+	}
+  
+  .facts_text {
+	  font-size:11px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+	.facts_image {
+		display: none;
+	}
 }
