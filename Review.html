@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Bread Facts</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="FoodSite.css">
+
+<body>
+	<div class = "banner">
+		<h1>All About Bread</h1>
+	</div>
+
+	<!--Tabs-->
+	<div class="row">
+		<div class="tabs_column">
+			<div class="tabs">
+				<a href="https://insanecipher.github.io/FoodSite/"> <p>Home</p> </a>
+			</div>
+		</div>
+	
+		<div class="tabs_column">
+			<div class="tabs">
+				<a href="Facts.html"> <p>Interesting Facts</p> </a>
+			</div>
+		</div>
+		
+		<div class="tabs_column">
+			<div class="tabs">
+				<a href="Review.html"> <p>Review Page</p> </a>
+			</div>
+		</div>
+		
+		<div class="tabs_column">
+			<div class="tabs">
+				<a href="About.html"> <p>About</p> </a>
+			</div>
+		</div>
+	</div>
+
+	<div class="facts_page">
+	
+		<h2>Feedback Form</h2>
+		
+		<p>Please fill out the form below so we can improve this website.</p>
+		
+		
+		<form action="">
+			<h3>Please select your gender.</h3>
+			<input type="radio" id="gender" name="gender" value="M">
+			<label for="male">Male</label><br>
+			<input type="radio" id="gender" name="gender" value="F">
+			<label for="female">Female</label><br>
+			<input type="radio" id="gender" name="gender" value="O">
+			<label for="other">Other</label><br>
+			<input type="radio" id="gender" name="gender" value="N">
+			<label for="notGiven">Prefer not to say</label><br>
+			
+			<h3>Please select your age.</h3>
+			<input type="radio" id="age" name="age" value="A">
+			<label for="A"> 0 - 18</label><br>
+			<input type="radio" id="age" name="age" value="B">
+			<label for="B">18 - 29</label><br>
+			<input type="radio" id="age" name="age" value="C">
+			<label for="C">30 - 40</label><br>
+			<input type="radio" id="age" name="age" value="D">
+			<label for="D">40+</label><br>
+			
+			<h3>What bread type would you like us to add to the website next?</h3>
+			<input type="text" id="bread" name="bread" value=""><br>
+			
+			<h3>How difficult did you find it to navigate the website?</h3>
+			<input type="radio" id="nav" name="nav" value="A">
+			<label for="A">Easy</label><br>
+			<input type="radio" id="nav" name="nav" value="B">
+			<label for="B">Ok</label><br>
+			<input type="radio" id="nav" name="nav" value="C">
+			<label for="C">A Bit Tricky</label><br>
+			<input type="radio" id="nav" name="nav" value="D">
+			<label for="D">Hard</label><br>
+			
+			<h3>Did you learn something new from the bread facts page?</h3>
+			<input type="radio" id="facts" name="facts" value="Y">
+			<label for="A">Yes</label><br>
+			<input type="radio" id="facts" name="facts" value="N">
+			<label for="B">No</label><br>
+			<input type="radio" id="facts" name="facts" value="NA">
+			<label for="C">N/A</label><br>
+			
+			<h3>How would you rate your experience with the website today?</h3>
+			<input type="radio" id="exp" name="exp" value="A">
+			<label for="A">Very Unsatisfied</label><br>
+			<input type="radio" id="exp" name="exp" value="B">
+			<label for="B">Unsatisfied</label><br>
+			<input type="radio" id="exp" name="exp" value="C">
+			<label for="C">Neutral</label><br>
+			<input type="radio" id="exp" name="exp" value="D">
+			<label for="D">Satisfied</label><br>
+			<input type="radio" id="exp" name="exp" value="E">
+			<label for="E">Very Satisfied</label><br>
+			
+			<h3>How could we improve?</h3>
+			<textarea id="improve" name="improve" rows="4" cols="50"></textarea><br>
+			
+			<br><input type="submit" onclick="alert('Thank You For Your Feedback!')" value="Submit">
+			<input type="reset"><br>
+		</form> 
+	</div>
+
+	<footer>
+	  <p>Made By Andras Gelle</p>  
+	  <p>V 0.5.1</p> 
+	</footer>
+
+</body>
+</html>
